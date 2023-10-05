@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  /* padding: 0; */
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+
+  background: #64e87c;
+  background: linear-gradient(135deg, #64e87c, #3b68e6);
+  background-attachment: fixed;
+}
+
+header {
+  color: rgb(245, 245, 245);
+  width: 100%;
+  /* height: 300px; */
+  display: flex;
+  flex-direction: column;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.header-title {
+  font-weight: 900;
+  font-size: 3em;
+  text-align: center;
+  margin: 0 auto 20px;
+  text-shadow: 2px 3px 0px rgba(150, 150, 150, 1);
+}
+
+.header-p {
+  font-weight: 900;
+  font-size: 1.5em;
+  text-shadow: 1px 2px 0px rgba(150, 150, 150, 1);
+}
+
+.main-block1 {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 0px rgba(150, 150, 150, 1);
+  /* border: 2px solid #fff; */
+  padding: 50px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  backdrop-filter: blur(125px);
+
+  margin-bottom: 50px;
+
+  -webkit-box-shadow: 0px 4px 6px 6px rgba(34, 60, 80, 0.23);
+  -moz-box-shadow: 0px 4px 6px 6px rgba(34, 60, 80, 0.23);
+  box-shadow: 0px 4px 6px 6px rgba(34, 60, 80, 0.23);
+}
+
+input {
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 45px;
+  font-size: 90%;
+  font-weight: bold;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 16px;
+  outline: none;
+  border: none;
+}
+
+input:focus {
+  box-shadow: 0px 4px 8px 7px rgba(34, 60, 80, 0.26);
+  outline: none;
+  border: none;
+  padding: 20px;
+}
+
+select {
+  padding-left: 10px;
+}
+
+option,
+select {
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  /* width: 900px; */
+  width: 100%;
+  height: 45px;
+  font-size: 90%;
+  font-weight: bold;
+  /* border: 2px solid black; */
+  border-radius: 16px;
+  /* -webkit-box-shadow: 0px 4px 8px 7px rgba(34, 60, 80, 0.26);
+  -moz-box-shadow: 0px 4px 8px 7px rgba(34, 60, 80, 0.26);
+  box-shadow: 0px 4px 8px 7px rgba(34, 60, 80, 0.26); */
+}
+
+label {
+  color: white;
+}
+
+.label-block {
+  margin-bottom: 25px;
+  text-shadow: -1px 1px 4px rgba(0, 0, 0, 1);
+  color: black;
+}
+
+.separation {
+  margin-bottom: 100px;
+}
+
+.days-v {
+  display: flex;
+  width: auto;
+  height: 70px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.days-separation {
+  margin-top: 30px;
+  display: flex;
+  margin-bottom: 30px;
+  flex-direction: column;
+}
+
+.days {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.days-day {
+  font-size: 20px;
+  transition: 0.5s;
+ 
+}
+
+.days-input {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+#days1:checked ~ .days-day,
+#days2:checked ~ .days-day,
+#days3:checked ~ .days-day,
+#days4:checked ~ .days-day,
+#days5:checked ~ .days-day,
+#days6:checked ~ .days-day {
+  color: yellow;
+}
+table {
+  border-collapse: collapse;
+  margin: 1em;
+  padding: 20px;
+  /* -webkit-box-shadow: 0px 4px 8px 7px rgba(34, 60, 80, 0.26);
+  -moz-box-shadow: 0px 4px 8px 7px rgba(34, 60, 80, 0.26);
+  box-shadow: 0px 4px 8px 7px rgba(34, 60, 80, 0.26); */
+}
+
+.table-border {
+  margin-top: 16px;
+  border-radius: 16px;
+  background: #094d64;
+  display: none;
+}
+
+th {
+  border-bottom: 1px solid #364043;
+  color: #e2b842;
+  font-size: 0.85em;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  text-align: left;
+}
+
+td {
+  color: #fff;
+  font-weight: 400;
+  padding: 12px;
+  font-size: 14px;
+}
+
+.disabled td {
+  color: #4f5f64;
+}
+
+tbody tr {
+  transition: background 0.25s ease;
+}
+
+tbody tr:hover {
+  background: #02516b;
+}
+
+#output {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: -10px;
+}
+
+#gen-date { }
+
+.gen-button {
+    border-radius: 10px;
+    height: 50px;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    background-color: #e2b842;
+}
+
+.btn-not-active:disabled {
+  opacity: 0.5; /* Уменьшение прозрачности для обозначения неактивности */
+  pointer-events: none; /* Запрет событий указателя (например, нажатий) */
+  cursor: not-allowed; /* Изменение курсора на "не разрешено" */
+}
+
+#input-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: -10px;
+}
+
+.input-fields {
+}
+
+.sep1 {
+  display: none;
+}
+
+.sep2 {
+  display: none;
+}
+
+.sep3 {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+.previousPageBtn {
+  width: 100px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nextPageBtn {
+  width: 100px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.label-block-days {
+  width: 900px;
+}
+
+.Page {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.previousPageBtn:hover {
+  color: #ffe293;
+}
+.nextPageBtn:hover {
+  color: #ffe293;
+}
+
+.doGood {
+  display: none;
+}
+
+#good-btn {
+  background-color: #64e87c;
+  color: #000;
+}
+
+.doGoodActive {
+  width: 150px;
+  height: 70px;
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.doGoodActive:hover {
+  color: #ffe600;
+}
+
+
+/* Стили для контейнера и элементов */
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.left {
+  flex: 1;
+  margin-right: 10px; /* Добавляет небольшой отступ между inputDate и inputHead */
+  text-align: center;
+  opacity: .6;
+}
+
+.right {
+  flex: 5;
+  font-weight: normal;
+  opacity: .6;
+}
